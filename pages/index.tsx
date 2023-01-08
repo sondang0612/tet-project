@@ -1,5 +1,6 @@
 import React from "react";
+import Layout from "../components/Layout";
 
 export default function Home() {
-  return <div>Hello World</div>;
+  return <Layout title="Home Page">Home Page</Layout>;
 }
