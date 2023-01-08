@@ -1,7 +1,8 @@
-import React from "react";
+import { useSelector } from "react-redux";
 import Layout from "../components/Layout";
 import ProductItem from "../components/ProductItem";
 import data from "../utils/data";
+import { RootState } from "../utils/store/store";
 
 export default function Home() {
   return (

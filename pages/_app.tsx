@@ -1,7 +1,13 @@
 import "antd/dist/reset.css";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import { Provider } from "react-redux";
+import { store } from "../utils/store/store";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />;
+    </Provider>
+  );
 }

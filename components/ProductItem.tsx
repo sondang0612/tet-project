@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
+import { useSelector } from "react-redux";
 import { Product } from "../types";
+import { RootState } from "../utils/store/store";
+import { useActions } from "../utils/store/useActions";
 
 type Props = {
   product: Product;
@@ -9,6 +12,7 @@ type Props = {
 
 export default function ProductItem(props: Props) {
   const { product } = props;
+  const actions = useActions();
 
   return (
     <div className="card">
@@ -29,7 +33,11 @@ export default function ProductItem(props: Props) {
         </Link>
         <p className="mb-2">{product.brand}</p>
         <p>${product.price}</p>
-        <button className="primary-button" type="button">
+        <button
+          className="primary-button"
+          type="button"
+          onClick={() => actions.addToCart({ ...product })}
+        >
           Add to cart
         </button>
       </div>
