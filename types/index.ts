@@ -9,6 +9,7 @@ export type Product = {
 };
 
 export type Cart = {
-  productId: number;
+  product: Product;
   quantity: number;
+  price: number;
 };

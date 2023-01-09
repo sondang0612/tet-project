@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import React from "react";
-import { useSelector } from "react-redux";
 import { Product } from "../types";
-import { RootState } from "../utils/store/store";
 import { useActions } from "../utils/store/useActions";
 
 type Props = {
