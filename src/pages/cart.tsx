@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
-import Layout from "../components/Layout";
+import Layout from "../client/components/Layout";
 import { RootState } from "../utils/store/store";
 import { AiOutlineDelete } from "react-icons/ai";
 import { useActions } from "../utils/store/useActions";

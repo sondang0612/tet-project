@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { Product } from "../types";
-import { useActions } from "../utils/store/useActions";
+import { Product } from "../../types";
+import { useActions } from "../../utils/store/useActions";
 
 type Props = {
   product: Product;

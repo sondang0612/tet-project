@@ -1,6 +1,6 @@
 import Cookies from "js-cookie";
-import Layout from "../components/Layout";
-import ProductItem from "../components/ProductItem";
+import Layout from "../client/components/Layout";
+import ProductItem from "../client/components/ProductItem";
 import data from "../utils/data";
 
 export default function HomeScreen() {

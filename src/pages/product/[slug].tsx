@@ -1,7 +1,7 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Layout from "../../components/Layout";
+import Layout from "../../client/components/Layout";
 import data from "../../utils/data";
 import { useActions } from "../../utils/store/useActions";
 

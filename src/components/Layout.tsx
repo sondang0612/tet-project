@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../utils/store/store";
+import { RootState } from "../../utils/store/store";
 
 type Props = {
   children: React.ReactNode;
